@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaled Abdelazim | Data Science & AI Engineer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- Particle Background -->
+    <div id="tsparticles"></div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <a href="#home" class="logo"><span></span></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Khaled Abdelazim</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Motivated Computer Science & AI student at Helwan University with a strong foundation in machine
+                learning, data analysis,data science and software engineering. I build smart solutions to solve complex
+                problems.
+            </p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/khaled-abdelazim-57bb24244" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/khaledabdelazim7" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="mailto:khaledabdelazim143@gmail.com"><i class='bx bx-envelope'></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1dBD9lkV-GM66dcyXXjVbrhdbDGqy6hZZ/view?usp=sharing" class="btn"
+                target="_blank">Download CV</a>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <img src="WhatsApp Image 2025-05-01 at 20.10.09_e36c2861.jpg" alt="Khaled Abdelazim">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about hidden" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <div class="about-container">
+            <div class="about-content box-glass">
+                <h3>Computer Science & Artificial Intelligence Student</h3>
+                <p>Eager to grow into a data science role and contribute to real-world tech environments by applying
+                    analytical thinking, coding skills, and AI knowledge to uncover insights and drive innovation.
+                    Proven problem solver demonstrated through competitive programming and various software engineering
+                    internships.</p>
+
+                <div class="education">
+                    <h4><i class='bx bxs-graduation'></i> Education</h4>
+                    <ul>
+                        <li><strong>Helwan University</strong><br>B.Sc. in Computer Science and Artificial Intelligence
+                            (10/2022 - 05/2026)<br>
+                            • Comprehensive undergraduate program combining core principles of computer science with
+                            advanced topics in artificial intelligence, including machine learning, data science, and
+                            intelligent systems. Focused on practical application through projects, research, and
+                            hands-on experience.</li>
+                        <li><strong>Saint Fatima Language School</strong><br>High School (09/2012 - 08/2021)<br>•
+                            Developed strong communication, analytical, and time management skills.</li>
+                        <li><strong>Menese language school (Genesis now)</strong><br>Primary school<br>• Completed
+                            foundational education with an emphasis on language development and core academic
+                            skills.<br>• Participated in school activities fostering teamwork, creativity, and early
+                            leadership.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="skills-content box-glass">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Pandas / NumPy</span>
+                    <span class="skill-tag">Scikit-Learn</span>
+                    <span class="skill-tag">TensorFlow / PyTorch</span>
+                    <span class="skill-tag">Transformers</span>
+                    <span class="skill-tag">OOP</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">HTML / CSS</span>
+                    <span class="skill-tag">PHP</span>
+                </div>
+
+                <h3 style="margin-top: 2rem;">Languages</h3>
+                <div class="skills-grid">
+                    <span class="skill-tag">Arabic (Native)</span>
+                    <span class="skill-tag">English (Proficient)</span>
+                    <span class="skill-tag">French (Basic)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience hidden" id="experience">
+        <h2 class="heading">My <span>Experience</span></h2>
+
+        <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-item hidden">
+                <i class='bx bxs-briefcase timeline-icon'></i>
+                <div class="timeline-content box-glass">
+                    <span class="date">08/2025 - 09/2025</span>
+                    <h3>Machine Learning Trainee</h3>
+                    <p>Genius Technology Center (GTC)</p>
+                    <ul>
+                        <li>Completed an intensive Machine Learning Track focused on practical, industry-relevant
+                            skills.</li>
+                        <li>Performed data wrangling, cleaning, and preprocessing for real-world datasets.</li>
+                        <li>Conducted Exploratory Data Analysis (EDA) to extract insights and understand data
+                            distributions.</li>
+                        <li>Built and evaluated Machine Learning models using supervised and unsupervised techniques.
+                        </li>
+                        <li>Gained foundational knowledge in Deep Learning concepts and neural networks.</li>
+                        <li>Learned and applied model deployment techniques to prepare ML models for production use.
+                        </li>
+                        <li>Developed hands-on experience across the full ML workflow: data preparation → modeling →
+                            evaluation → deployment.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Experience 2 -->
+            <div class="timeline-item hidden">
+                <i class='bx bx-brain timeline-icon'></i>
+                <div class="timeline-content box-glass">
+                    <span class="date">08/2025</span>
+                    <h3>Ai Trainee - "The Green Leap" (2025)</h3>
+                    <p>CIB Summer Internship</p>
+                    <ul>
+                        <li>Completed a one-month program on sustainable finance, AI in banking, ethical data use,
+                            governance, and leadership development, delivered in partnership with Euromoney Learning,
+                            SAS, Frankfurt School of Finance & Management, LinkedIn Learning, Udemy, Proparco, EMC, and
+                            Holberton School.</li>
+                        <li>Gained hands-on knowledge of green investments, responsible AI, and innovation in financial
+                            services.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Experience 3 -->
+            <div class="timeline-item hidden">
+                <i class='bx bx-server timeline-icon'></i>
+                <div class="timeline-content box-glass">
+                    <span class="date">07/2025 - 07/2025</span>
+                    <h3>MLOps Trainee</h3>
+                    <p>National Telecommunication Institute</p>
+                    <ul>
+                        <li>Developed and deployed ML models (supervised, unsupervised, CNNs, RNNs) using Python,
+                            Pandas, Scikit-learn, TensorFlow, and PyTorch.</li>
+                        <li>Performed business-focused data analysis, model evaluation, and cloud-based deployment.</li>
+                        <li>Enhanced communication, leadership, teamwork, and freelancing skills, including portfolio
+                            creation and proposal writing.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Experience 4 -->
+            <div class="timeline-item hidden">
+                <i class='bx bx-code-alt timeline-icon'></i>
+                <div class="timeline-content box-glass">
+                    <span class="date">09/2023</span>
+                    <h3>Software Engineer Intern</h3>
+                    <p>Modern Gas Co</p>
+                    <ul>
+                        <li>Completed a two-week internship focused on software development.</li>
+                        <li>Contributed to basic system debugging and assisted in junior-level programming tasks.</li>
+                        <li>Gained practical experience in a corporate development environment.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects hidden" id="projects">
+        <h2 class="heading">Technical <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <!-- Project 5: Hypermarket -->
+            <a href="https://github.com/khaledabdelazim7/Hypermarket_java" target="_blank" class="project-box box-glass"
+                style="color:inherit;">
+                <i class='bx bx-basket project-icon'></i>
+                <h3>Hypermarket Management System</h3>
+                <p style="font-size:1.3rem;">Developed a modular console-based system simulating operations of a
+                    hypermarket with distinct interfaces for Admin, Employees (Inventory, Marketing, Seller), and
+                    Customers. Implemented features include employee management, inventory control, order handling, and
+                    file-based data persistence. Ensured role-based access and modular code design using object-oriented
+                    principles and Java standard libraries. (04/2025)</p>
+                <div class="tech-stack">
+                    <span>Java</span><span>File I/O</span><span>OOP</span>
+                </div>
+            </a>
+
+            <!-- Project 4: Quiz App -->
+            <a href="https://github.com/khaledabdelazim7/quiz-app-management-parrallel_course" target="_blank"
+                class="project-box box-glass" style="color:inherit;">
+                <i class='bx bx-pencil project-icon'></i>
+                <h3>Quiz Application with User Authentication</h3>
+                <p style="font-size:1.3rem;">Developed a desktop-based quiz system with multi-user login, real-time
+                    subject selection, and a timed exam module. Integrated SQL Server for robust storage and retrieval
+                    of user credentials, subjects, and questions using pypyodbc. Implemented multithreading for
+                    concurrent login windows, dynamic UI components with Tkinter, and real-time exam timers. Automated
+                    answer evaluation and scoring with feedback mechanisms for enhanced user experience. (12/2024)</p>
+                <div class="tech-stack">
+                    <span>Python</span><span>Tkinter</span><span>SQL
+                        Server</span><span>pypyodbc</span><span>Threading</span>
+                </div>
+            </a>
+
+            <!-- Project 3: Movie Recommendation -->
+            <a href="https://github.com/khaledabdelazim7/aml_movie_recommendation_system" target="_blank"
+                class="project-box box-glass" style="color:inherit;">
+                <i class='bx bxs-movie-play project-icon'></i>
+                <h3>Movie Hybrid Recommendation System</h3>
+                <ul style="font-size:1.3rem; color:#bcc; line-height:1.5; padding-left:1.5rem; margin-bottom: 1.5rem;">
+                    <li>Data Processing: Cleaned and merged user ratings and movie metadata.</li>
+                    <li>Content-Based Filtering: Used TF-IDF vectorization on movie titles and genres to calculate
+                        cosine similarity and recommend similar movies.</li>
+                    <li>Collaborative Filtering: Built a user-item sparse matrix and applied KNN to find similar users
+                        and predict ratings.</li>
+                    <li>Hybrid Method: Designed a hybrid recommender blending both methods using a weighted score to
+                        provide personalized recommendations.</li>
+                    <li>Evaluation: Assessed model performance using MSE, MAE, Precision, Recall, F1-Score, and ROC-AUC
+                        metrics.</li>
+                    <li>Visualization: Plotted similarity heatmaps, ROC curve, confusion matrix, and simulated training
+                        loss curve. (04/2025)</li>
+                </ul>
+                <div class="tech-stack">
+                    <span>Python</span><span>Pandas</span><span>NumPy</span><span>scikit-learn</span><span>Seaborn</span><span>Matplotlib</span>
+                </div>
+            </a>
+
+            <!-- Project 2: Translation App -->
+            <a href="https://github.com/khaledabdelazim7/nlp_transilation-web-" target="_blank"
+                class="project-box box-glass" style="color:inherit;">
+                <i class='bx bx-text project-icon'></i>
+                <h3>Translation App (Arabic ↔ English)</h3>
+                <p style="font-size:1.3rem;">Developed a bilingual translation web app using fine-tuned transformer
+                    models (Seq2Seq) for Arabic–English and English–Arabic translation. Integrated Hugging Face’s
+                    transformers library with a Streamlit interface for real-time user interaction. Optimized for
+                    CPU-based inference and included robust error handling for model loading and text generation.
+                    (05/2025)</p>
+                <div class="tech-stack">
+                    <span>Streamlit</span><span>Transformers</span><span>PyTorch</span>
+                </div>
+            </a>
+
+            <!-- Project 1: Sales Forecasting -->
+            <a href="https://github.com/khaledabdelazim7/Sales-Forecasting-Nti-Project" target="_blank"
+                class="project-box box-glass" style="color:inherit;">
+                <i class='bx bx-store-alt project-icon'></i>
+                <h3>Sales Forecasting System</h3>
+                <ul style="font-size:1.3rem; color:#bcc; line-height:1.5; padding-left:1.5rem; margin-bottom: 1.5rem;">
+                    <li>Developed a Sales Forecasting System leveraging machine learning to help businesses optimize
+                        inventory and sales decisions.</li>
+                    <li>Built an end-to-end pipeline: data collection, preprocessing, feature engineering, model
+                        training, and evaluation.</li>
+                    <li>Collaborated in a team of three, delivering a comprehensive technical report. (07/2025)</li>
+                </ul>
+                <div class="tech-stack">
+                    <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Streamlit</span><span>Seaborn</span><span>Time
+                        Series</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates hidden" id="certificates">
+        <h2 class="heading">My <span>Certificates</span></h2>
+
+        <div class="projects-container">
+            <a href="https://drive.google.com/file/d/1LtrvKWNXTJXdoXme99hIq6hYv-L2DAne/view?usp=drive_link"
+                target="_blank" class="project-box box-glass"
+                style="text-align:center; min-height:150px; justify-content:center; color:inherit;">
+                <i class='bx bx-certification project-icon'></i>
+                <h3>Modern gas Co. Internship</h3>
+            </a>
+            <a href="https://drive.google.com/file/d/1yQ9Z36ZRLesEgIPXmgNTw7eFXK8mCnOj/view?usp=sharing" target="_blank"
+                class="project-box box-glass"
+                style="text-align:center; min-height:150px; justify-content:center; color:inherit;">
+                <i class='bx bx-certification project-icon'></i>
+                <h3>NTI Summer Training Program</h3>
+            </a>
+            <a href="https://drive.google.com/file/d/1dUeA0iuuVlqQ3qyd_9HsG-1-KFEnZuFS/view?usp=drive_link"
+                target="_blank" class="project-box box-glass"
+                style="text-align:center; min-height:150px; justify-content:center; color:inherit;">
+                <i class='bx bx-certification project-icon'></i>
+                <h3>Coach Academy - Level 2 Problem Solving</h3>
+            </a>
+            <a href="https://drive.google.com/file/d/1gG0_GchxFbgs2PK8tycyMUxMpCg-lPkb/view?usp=sharing" target="_blank"
+                class="project-box box-glass"
+                style="text-align:center; min-height:150px; justify-content:center; color:inherit;">
+                <i class='bx bx-certification project-icon'></i>
+                <h3>Genius Technology Center</h3>
+            </a>
+            <a href="https://drive.google.com/file/d/1DuK6yfgZ49a-NeHnX0wpj868UPidGjN2/view?usp=sharing" target="_blank"
+                class="project-box box-glass"
+                style="text-align:center; min-height:150px; justify-content:center; color:inherit;">
+                <i class='bx bx-certification project-icon'></i>
+                <h3>CIB Summer Internship</h3>
+            </a>
+            <a href="https://drive.google.com/file/d/1p0p8Htd4g6RteFp-D2zVkIfbwpXS2ro5/view?usp=drive_link"
+                target="_blank" class="project-box box-glass"
+                style="text-align:center; min-height:150px; justify-content:center; color:inherit;">
+                <i class='bx bx-certification project-icon'></i>
+                <h3>ROUTE Artificial Intelligence Program</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses hidden" id="courses">
+        <h2 class="heading">Training & <span>Courses</span></h2>
+
+        <div class="timeline">
+            <!-- Course 1 -->
+            <div class="timeline-item hidden">
+                <i class='bx bx-book-open timeline-icon'></i>
+                <a href="https://drive.google.com/file/d/1p0p8Htd4g6RteFp-D2zVkIfbwpXS2ro5/view?usp=drive_link"
+                    target="_blank" class="timeline-content box-glass"
+                    style="color:inherit; display:block; text-decoration:none;">
+                    <span class="date">07/2025 – 12/2025</span>
+                    <h3>AI fundamentals</h3>
+                    <p>ROUTE</p>
+                    <ul>
+                        <li>Completed an intensive training program covering core AI and data science concepts.</li>
+                        <li>Built and evaluated machine learning models using Python.</li>
+                        <li>Applied data preprocessing and visualization techniques for real-world datasets.</li>
+                        <li>Gained hands-on exposure to deep learning fundamentals, computer vision, and natural
+                            language processing.</li>
+                    </ul>
+                </a>
+            </div>
+            <!-- Course 2 -->
+            <div class="timeline-item hidden">
+                <i class='bx bx-code-block timeline-icon'></i>
+                <a href="https://drive.google.com/file/d/1dUeA0iuuVlqQ3qyd_9HsG-1-KFEnZuFS/view?usp=drive_link"
+                    target="_blank" class="timeline-content box-glass"
+                    style="color:inherit; display:block; text-decoration:none;">
+                    <span class="date">10/2023 – 02/2024</span>
+                    <h3>Level 2 Competitive Programming</h3>
+                    <p>Coach Academy</p>
+                    <ul>
+                        <li>Gained hands-on experience with data structures, algorithms, and problem-solving techniques.
+                        </li>
+                        <li>Solved advanced problems under time constraints simulating competitive programming
+                            environments.</li>
+                        <li>Improved proficiency in C++ for algorithmic thinking and code optimization.</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-text">
+            <h2>Let's <span>Connect</span></h2>
+            <p>I am always open to discussing new opportunities, collaborations, or tech talks.</p>
+            <div class="contact-info">
+                <p><i class='bx bxs-envelope'></i> khaledabdelazim143@gmail.com</p>
+                <p><i class='bx bxs-phone'></i> 01065507804</p>
+                <p><i class='bx bxs-map'></i> New Nozha, Cairo, Egypt</p>
+            </div>
+            <div class="social-links footer-socials">
+                <a href="https://linkedin.com/in/khaled-abdelazim-57bb24244" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/khaledabdelazim7" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 by Khaled Abdelazim | All Rights Reserved.</p>
+            <a href="#home" class="scroll-top"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Typed.js for typing animation -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- VanillaTilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
