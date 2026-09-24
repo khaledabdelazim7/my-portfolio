@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaled Abdelazim | Links</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .link-tree-wrapper {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .link-tree-container {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            text-align: center;
+            padding: 4rem 3rem;
+        }
+
+        .link-tree-profile {
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            border: 3px solid var(--main-color);
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 238, 255, 0.4);
+            margin-bottom: 1rem;
+        }
+
+        .link-tree-profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .link-tree-container h2 {
+            font-size: 3.2rem;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .link-tree-container p {
+            font-size: 1.6rem;
+            color: #ccc;
+            margin-bottom: 2rem;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 1.6rem 2rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: var(--text-color);
+            background: rgba(25, 25, 30, 0.6);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-btn i {
+            position: absolute;
+            left: 2rem;
+            font-size: 2.4rem;
+            color: var(--main-color);
+            transition: transform 0.4s ease;
+        }
+
+        .link-btn span {
+            z-index: 1;
+        }
+
+        .link-btn:hover {
+            border-color: var(--main-color);
+            box-shadow: 0 5px 20px rgba(0, 238, 255, 0.2);
+            transform: translateY(-3px);
+            background: rgba(0, 238, 255, 0.05);
+        }
+
+        .link-btn:hover i {
+            transform: scale(1.2);
+        }
+
+        .home-btn {
+            margin-top: 2rem;
+            font-size: 1.6rem;
+            color: var(--main-color);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            transition: 0.3s;
+        }
+
+        .home-btn:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- Particle Background -->
+    <div id="tsparticles"></div>
+
+    <div class="link-tree-wrapper">
+        <div class="link-tree-container box-glass">
+            <div class="link-tree-profile">
+                <img src="WhatsApp Image 2025-05-01 at 20.10.09_e36c2861.jpg" alt="Khaled Abdelazim">
+            </div>
+            <h2>Khaled Abdelazim</h2>
+            <p>AI & Data Science Engineer</p>
+
+            <a href="https://drive.google.com/file/d/1dBD9lkV-GM66dcyXXjVbrhdbDGqy6hZZ/view?usp=sharing" target="_blank"
+                class="link-btn">
+                <i class='bx bxs-file-pdf'></i>
+                <span>MY CV</span>
+            </a>
+
+            <a href="https://github.com/khaledabdelazim7" target="_blank" class="link-btn">
+                <i class='bx bxl-github'></i>
+                <span>GitHub</span>
+            </a>
+
+            <a href="https://linkedin.com/in/khaled-abdelazim-57bb24244" target="_blank" class="link-btn">
+                <i class='bx bxl-linkedin'></i>
+                <span>LinkedIn</span>
+            </a>
+
+            <a href="mailto:khaledabdelazim143@gmail.com" class="link-btn">
+                <i class='bx bxs-envelope'></i>
+                <span>Email Me</span>
+            </a>
+
+            <a href="tel:+201065507804" class="link-btn">
+                <i class='bx bxs-phone'></i>
+                <span>Phone: +201065507804</span>
+            </a>
+
+            <a href="https://khaledabdelazim.netlify.app/" target="_blank" class="link-btn">
+                <i class='bx bx-globe'></i>
+                <span>Portfolio</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+    <script>
+        /* === Custom Cursor === */
+        const cursor = document.querySelector('.cursor');
+        const cursor2 = document.querySelector('.cursor2');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            cursor2.style.left = e.clientX + 'px';
+            cursor2.style.top = e.clientY + 'px';
+        });
+
+        const hoverElements = document.querySelectorAll('a, .link-btn');
+        hoverElements.forEach(el => {
+            el.addEventListener('mouseover', () => {
+                cursor.classList.add('expand');
+                cursor2.classList.add('expand');
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.classList.remove('expand');
+                cursor2.classList.remove('expand');
+            });
+        });
+
+        /* === tsParticles Configuration === */
+        tsParticles.load("tsparticles", {
+            fpsLimit: 60,
+            particles: {
+                number: { value: 60, density: { enable: true, value_area: 800 } },
+                color: { value: "#00eeff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true, anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false } },
+                size: { value: 3, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } },
+                line_linked: { enable: true, distance: 150, color: "#00eeff", opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 1.5, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "grab" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 200, line_linked: { opacity: 1 } },
+                    push: { particles_nb: 4 }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+
+</html>
